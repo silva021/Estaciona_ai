@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.silva021.estacionaa"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":toolkit")
+    implementation Androidx.core
+    implementation Androidx.appcompat
+    implementation Androidx.material
+    implementation Androidx.constraintlayout
+    implementation Androidx.legacy
+
+    implementation Navigation.fragment
+    implementation Navigation.ui
+    implementation(Squareup.retrofit)
+    implementation(Squareup.okhttp3)
+    implementation(Squareup.gson)
+    implementation(Lifecycle.viewModel)
+    implementation(Koin.android)
+    implementation(Koin.viewModel)
+    implementation Facebook.shimmer
+    implementation SantaLu.maskedEditText
+    implementation(Coroutines.coroutines)
+
+    testImplementation MockK.android
+    testImplementation MockK.core
+
+    implementation AndroidTest.junit
+    implementation AndroidTest.testExt
+    implementation AndroidTest.espresso
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}

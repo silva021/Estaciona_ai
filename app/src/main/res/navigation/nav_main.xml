@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/home_screen">
+
+    <fragment
+        android:id="@+id/home_screen"
+        android:name="com.silva021.estacionaa.ui.home.HomeFragment"
+        android:label="Home Screen"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/historic_screen"
+        android:name="com.silva021.estacionaa.ui.historic.list.HistoricListFragment"
+        android:label="Historic Screen"
+        tools:layout="@layout/fragment_historic_list" />
+
+    <fragment
+        android:id="@+id/historic_details_screen"
+        android:name="com.silva021.estacionaa.ui.historic.details.HistoricDetailsFragment"
+        android:label="Historic Details Screen"
+        tools:layout="@layout/fragment_historic_details" />
+
+</navigation>

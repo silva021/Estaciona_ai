@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Estaciona Aí</string>
+    <string name="entrance_title">Número da placa:</string>
+    <string name="hint_plate">AAA-0000</string>
+    <string name="entrance_title_loading">Registrando…</string>
+    <string name="entrance_title_loading_success">Registrado</string>
+    <string name="entrance_button_text">CONFIRMAR ENTRADA</string>
+    <string name="exit_payment_button_text">Pagamento</string>
+    <string name="exit_exit_button_text">Saída</string>
+    <string name="title_core">Core</string>
+    <string name="exit_historic_button">Ver histórico</string>
+    <string name="historic_current_time">Tempo Atual</string>
+    <string name="historic_payment">Pagamento</string>
+    <string name="historic_plate">Placa</string>
+    <string name="historic_status">Status</string>
+    <string name="dialog_out_title">Confirma a saída do veiculo da placa abaixo?</string>
+    <string name="dialog_out_first_button">Liberar Saída</string>
+    <string name="dialog_out_second_button">Voltar</string>
+    <string name="dialog_payment_first_button">Confirmar</string>
+    <string name="dialog_payment_second_button">Voltar</string>
+    <string name="dialog_payment_title">Confima o pagamento da placa abaixo?</string>
+</resources>
