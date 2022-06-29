@@ -41,17 +41,16 @@ class ExitFragment : BaseFragment<ExitViewModel>(ExitViewModel::class) {
             }
 
             historicButton.setOnClickListener {
-                navigate(R.id.historic_screen, bundleOf(HISTORIC_LIST_SCREEN_ID to textInputLicensePlate.text.toString()))
+                navigate(R.id.historic_screen,
+                    bundleOf(HISTORIC_LIST_SCREEN_ID to textInputLicensePlate.text.toString()))
             }
 
             paymentButton.setOnClickListener {
                 PaymentDialog.show(childFragmentManager, textInputLicensePlate.text.toString())
-//                textInputLicensePlate.setText("")
             }
 
             exitButton.setOnClickListener {
                 OutDialog.show(childFragmentManager, textInputLicensePlate.text.toString())
-//                textInputLicensePlate.setText("")
             }
         }
     }
@@ -73,7 +72,8 @@ class ExitFragment : BaseFragment<ExitViewModel>(ExitViewModel::class) {
             exitButton.isEnabled = state
             historicButton.isEnabled = state
             paymentButton.isEnabled = state
-            hideKeyboard()
+            if (state)
+                hideKeyboard()
         }
     }
 }

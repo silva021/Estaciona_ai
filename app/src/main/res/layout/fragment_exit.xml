@@ -45,8 +45,6 @@
                 android:background="@drawable/background_plate_input"
                 android:gravity="center"
                 android:hint="@string/hint_plate"
-                android:inputType="textCapCharacters"
-                android:text="asb-212"
                 android:textColor="@color/black"
                 android:textColorHint="@color/grey_text"
                 android:textSize="24sp"
