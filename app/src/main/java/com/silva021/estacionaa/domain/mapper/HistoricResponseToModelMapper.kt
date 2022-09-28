@@ -7,7 +7,7 @@ class HistoricResponseToModel : HistoricResponseToModelMapper {
     override fun modelToResponse(response: HistoricResponse) = HistoricModel(
         time = response.time.replace("days", "dias ")
             .replace("hours", "h ")
-            .replace("minutes", "min ")
+            .replace("minutes", "minu ")
             .replace("seconds", "seg "),
         paid = if (response.paid) "Pago" else "—",
         left = if (response.left) "—" else "Estacionado",
