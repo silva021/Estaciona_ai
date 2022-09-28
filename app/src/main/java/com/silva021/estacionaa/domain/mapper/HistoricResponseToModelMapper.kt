@@ -5,10 +5,10 @@ import com.silva021.estacionaa.domain.model.HistoricModel
 
 class HistoricResponseToModel : HistoricResponseToModelMapper {
     override fun modelToResponse(response: HistoricResponse) = HistoricModel(
-        time = response.time.replace("days", "dias ")
-            .replace("hours", "h ")
-            .replace("minutes", "min ")
-            .replace("seconds", "seg "),
+        time = response.time.replace("days", "Dias ")
+            .replace("hours", "Horas ")
+            .replace("minutes", "Minutos ")
+            .replace("seconds", "Segundos"),
         paid = if (response.paid) "Pago" else "—",
         left = if (response.left) "—" else "Estacionado",
         plate = response.plate,
